@@ -1,8 +1,9 @@
+import java.io.IOException;
 import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) 
+	public static void main(String[] args) throws IOException 
 	{
 		Home obj = new Home();
 		System.out.println("CRIMINAL RECORD MANAGEMENT");
@@ -11,7 +12,7 @@ public class Main {
 		}
 
 	
-	public void Choice()
+	public void Choice() throws IOException
 	{
 		System.out.println("\nSelect City:");
 		System.out.println("\t1)Metropolitan Cities \n \t2)State Capitals \n\t3)Other Major Cities\n");
@@ -28,7 +29,7 @@ public class Main {
 		
 	}
 	
-	public void city_Metro()
+	public void city_Metro() throws IOException
 	{
 		System.out.println("Here is a list of Metropolitan Cities::");
 		String[] city = {"Bangalore(Karnataka)","Delhi","Mumbai(Maharastra)","Chennai(Tamil Nadu)","Kolkata(Westy Bengal)","Hyderabad(Telengana)","Ahmedabad(Gujarat)","Pune(Maharastra)","Amaravati(Andhra Pradesh)","Visakhapatnam(Andhra Pradesh)","Surat(Gujarat)","Jaipur(Rajasthan)","Nagpur(Maharastra)"};
@@ -62,7 +63,7 @@ public class Main {
 		new Main().Service_Select();
 	}
 	
-	public void city_Capital()
+	public void city_Capital() throws IOException
 	{
 		System.out.println("Here is a list Of Capital Cities::");
 		String city[] = {"Itanagar(Arunachal Pradesh)","Dispur(Assam)","Patna(Bihar)","Raipur(Chhattisgarh)","Panaji(Goa)","Gandhinagar(Gujarat)","Chandigarh(Haryana)","Shimla(Himachal Pradesh)","Ranchi(Jharkhand)","Thiruvananthapuram(Kerala)","Bhopal(Madhya Pradesh)","Imphal(Manipur)","Shillong(Meghalaya)","Aizawl(Mizoram)","Kohima(Nagaland)","Bhubaneshwar(Odisha)","Chandigarh(Punjab)","Gangtok(Sikkim)","Agartala(Tripura)","Lucknow(Uttar Pradesh)","Uttarakhand(Dehradun)"};
@@ -103,14 +104,14 @@ public class Main {
 		
 	}
 	
-	public void city_Other()
+	public void city_Other() throws IOException
 	{
 		System.out.println("For Other cities:: Contact Toll Free Number:: 18** *** ***");
 		new Main().Service_Select();
 		
 	}
 	
-	public void Service_Select()
+	public void Service_Select() throws IOException
 	{
 		Scanner obj = new Scanner (System.in);
 		System.out.println("\n\n::SERVICES PROVIDED::");

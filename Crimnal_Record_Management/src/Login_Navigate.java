@@ -1,9 +1,10 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import Login_Package.Main;
 public class Login_Navigate {
 
-	public static void main(String args[]) {
+	public static void main(String args[]) throws FileNotFoundException {
 		System.out.println("\n::MUST LOGIN FIRST TO CONTINUE::");
 		System.out.println("\n::REDIRECTING TO LOGIN PAGE::");
 		Main obj = new Main();

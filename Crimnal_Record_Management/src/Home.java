@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 public class Home {
 
@@ -6,7 +7,7 @@ public class Home {
 	}
 	
 	
-	public void Intro()
+	public void Intro() throws IOException
 	{
 		System.out.println("This portal is a platform for Citizens to file crime related complaints online and seek antecedent \nverification of prospective employees (including for domestic help, drivers etc.), tenants or for any other purpose. \nCitizens can also seek certification of their own antecedents.");
 		System.out.println("\nThe portal would also provide access to authorized persons to use National Database of crime records \nfor the purpose of investigation, policy making, data analytics, research and providing citizen services.");

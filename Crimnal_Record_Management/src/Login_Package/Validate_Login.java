@@ -11,7 +11,7 @@ public class Validate_Login extends Login_Lock {
 	{
 		int q =0;
 		try {
-			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Name.txt");
+			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Police/Name.txt");
 			Scanner reader =new Scanner(obj1);
 			while(reader.hasNextLine())
 			{
@@ -38,7 +38,7 @@ public class Validate_Login extends Login_Lock {
 	{
 		int q=0;
 		try {
-			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Designation.txt");
+			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Police/Designation.txt");
 			Scanner reader =new Scanner(obj1);
 			while(reader.hasNextLine())
 			{
@@ -66,7 +66,7 @@ public class Validate_Login extends Login_Lock {
 	{
 		int q =0;
 		try {
-			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Password.txt");
+			File obj1 = new File("C:/Users/lenin/Desktop/Login_details/Police/Password.txt");
 			Scanner reader =new Scanner(obj1);
 			while(reader.hasNextLine())
 			{

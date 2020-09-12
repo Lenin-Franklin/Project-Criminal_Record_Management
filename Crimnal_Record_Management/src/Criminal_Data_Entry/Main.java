@@ -1,10 +1,12 @@
 package Criminal_Data_Entry;
 
+import java.util.*;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Scanner obj = new Scanner (System.in);
 		System.out.println("\n\nSERVICES FOR CITIZEN");
 		System.out.println("--------------------");
@@ -13,11 +15,11 @@ public class Main {
 		int choice = obj.nextInt();
 		switch(choice)
 		{
-		case 1: Report1();break;
-		case 2: Report2();break;
-		case 3: Report3();break;
+		case 1: Report1();new Get_Information().main(args);break;
+		case 2: Report2();new Get_Information().main(args);break;
+		case 3: Report3();new Get_Information().main(args);break;
 		default: {
-			System.out.println("::INVALID INPUT::");
+			System.out.println("invalid");
 		}
 		}
 
@@ -35,6 +37,10 @@ public class Main {
 	public static void Report2()
 	{
 		System.out.println("\n::CENTRAL CITIZEN SERVICES::");
+		System.out.println("\t1.Missing Person Search.");
+		System.out.println("\t2.Generate Vehicle NOC.");
+		System.out.println("\t3. Proclaimed Offenders Information.\r\n" + 
+				"");
 	}
 	
 	public static void Report3()
